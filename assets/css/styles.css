@@ -1,0 +1,306 @@
+/* Added Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+/* Box-sizing */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* General styles */
+html {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  max-width: 1170px;
+  margin: 0 auto;
+  color: #4a4a4a;
+}
+
+h1 {
+  font-size: 2.3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 32px 0 24px 0;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+.main-container {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.main-container img {
+  width: 100%;
+}
+
+.side-container {
+  width: 40%;
+  padding: 32px 24px 32px 16px;
+}
+
+.banner,
+.courses,
+.side-card:hover {
+    background-color: #d8d8d8;
+}
+
+@media only screen and (min-width: 1200px) {
+  .banner,
+  .info,
+  .courses,
+  .thesis,
+  footer {
+    border-right: 1px solid #4a4a4a;
+    border-left: 1px solid #4a4a4a;
+  }
+}
+
+.side-card-images {
+  margin: 16px;
+  width: 35%;
+  height: auto;
+}
+
+.side-card-img {
+  width: 100%;
+  height: auto;
+}
+
+.side-card-text {
+  width: 65%;
+  padding-right: 24px;
+}
+
+.side-card-text * {
+  display: block;
+}
+
+.side-card-text a {
+  color: #1e76dd;
+}
+
+.side-card-text span {
+  padding: 8px 0;
+}
+
+/* Flex Styles */
+.flex {
+  display: flex;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+/* Top Bar styles */
+.top-bar {
+  background-color: #fff;
+  width: 100%;
+  max-width: 1170px;
+  height: 64px;
+  padding: 0 24px;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+
+.logo span:nth-child(2) {
+  font-weight: bold;
+}
+
+.logo span:last-child {
+  color: #9b9b9b;
+}
+
+.top-bar nav a {
+  margin-right: 16px;
+}
+
+.top-bar nav a:last-child {
+  margin-right: 0;
+}
+
+.img-link {
+  display: none;
+}
+
+.logo span {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 690px) {
+  .top-bar span {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .top-bar nav {
+    display: none;
+  }
+  .img-link {
+    display: inline-block;
+  }
+}
+
+/* Banner Styles */
+.banner {
+  margin-top: 64px;
+}
+
+.banner .side-container {
+  max-width: 22rem;
+  vertical-align: middle;
+}
+
+.banner p {
+  font-size: 1.3rem;
+  margin: 24px 0;
+}
+
+.banner a {
+  text-align: center;
+  display: block;
+  width: 100%;
+  max-width: 17rem;
+  padding: 8px 0;
+  color: white;
+  background-color: #4a4a4a;
+}
+
+/* Info styles */
+.info p {
+  margin-bottom: 32px;
+}
+
+.info .main-container span {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.info .side-container {
+  padding: 16px 0 32px 0;
+  border-left: 1px solid #d8d8d8;
+}
+
+.info-card {
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.info-card:first-child {
+  border-top: none;
+}
+
+.info-card:last-child {
+  border-bottom: none;
+}
+
+.info-img-mobile {
+  display: none;
+}
+
+/* Courses styles */
+.courses {
+ padding: 32px 56px;
+}
+
+.courses h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.course-cards {
+  flex-wrap: wrap;
+}
+
+.course-card {
+  width: 33.3333%;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.course-card img {
+  width: 100%;
+  height: auto;
+}
+
+.course-card-text {
+  background-color: #fff;
+  padding: 16px 16px 24px 16px;
+  min-height: 10.6rem;
+}
+
+.course-card-text * {
+  display: block;
+}
+
+.course-card-text span {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.course-card-text span:nth-child(2) {
+  margin: 8px 0;
+}
+
+/* Thesis styles */
+.thesis h2 {
+  text-align: center;
+  padding-top: 32px;
+  margin: 0;
+}
+
+.thesis video {
+  width: 100%;
+  height: auto;
+}
+
+.thesis .main-container h3 {
+  margin: 24px 0 8px 0;
+}
+
+.thesis .side-container {
+  padding-top: 16px;
+}
+
+.thesis .side-card-text h3 {
+  padding-bottom: 8px;
+}
+
+/* Footer styles */
+footer {
+  font-size: 0.8rem;
+  height: 75px;
+  padding: 24px 16px;
+  border-top: 1px solid #d8d8d8;
+}
+
+footer span a:first-child {
+  margin-right: 8px;
+}
