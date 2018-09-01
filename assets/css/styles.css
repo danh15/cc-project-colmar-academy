@@ -55,7 +55,7 @@ h3 {
 
 .side-container {
   width: 40%;
-  padding: 32px 24px 32px 16px;
+  padding: 32px 0 32px 16px;
 }
 
 .banner,
@@ -88,7 +88,7 @@ h3 {
 
 .side-card-text {
   width: 65%;
-  padding-right: 24px;
+  padding: 8px 24px 8px 0;
 }
 
 .side-card-text * {
@@ -176,6 +176,7 @@ h3 {
 .banner .side-container {
   max-width: 22rem;
   vertical-align: middle;
+  padding-right: 24px;
 }
 
 .banner p {
@@ -191,6 +192,40 @@ h3 {
   padding: 8px 0;
   color: white;
   background-color: #4a4a4a;
+}
+
+@media only screen and (max-width: 751px) {
+  .banner h1 {
+    font-size: 2.1rem;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner .main-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .banner .side-container {
+    width: 100%;
+    max-width: none;
+    padding: 0 16px;
+    margin: 32px 0;
+    align-content: center;
+  }
+
+  .banner .side-container h1 {
+    text-align: center;
+  }
+
+  .banner .side-container a {
+    margin: 0 auto;
+  }
+
 }
 
 /* Info styles */
@@ -223,6 +258,54 @@ h3 {
 
 .info-img-mobile {
   display: none;
+}
+
+@media only screen and (max-width: 930px) {
+  .info .main-container,
+  .info .side-container {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .info .main-container {
+    display: none;
+  }
+
+  .info .side-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .info .side-card {
+    flex-direction: column;
+    padding: 32px 16px;
+    border: none;
+  }
+
+  .info .side-card-images {
+    width: 100%;
+    margin: 0;
+  }
+
+  .info .side-card-img {
+    display: none;
+  }
+
+  .info-img-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .info .side-card-text {
+    padding: 16px;
+    width: 100%;
+  }
+
+  .info .side-card-text {
+    line-height: 1.4rem;
+  }
 }
 
 /* Courses styles */
@@ -269,6 +352,64 @@ h3 {
   margin: 8px 0;
 }
 
+@media only screen and (max-width: 1061px) {
+  .course-card-text {
+    min-height: 12rem;
+  }
+}
+
+@media only screen and (max-width: 906px) {
+  .course-card-text {
+    min-height: 13.5rem;
+  }
+}
+
+@media only screen and (max-width: 806px) {
+  .courses {
+    padding: 32px 16px;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+
+  .course-card {
+    width: 50%;
+  }
+
+  .course-card-text {
+    min-height: 12rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .courses {
+    background-color: #fff;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+  }
+
+  .course-card {
+    width: 100%;
+    margin:4px 0;
+    padding: 0;
+  }
+
+  .course-card-text {
+    background-color: #d8d8d8;
+    min-height: 0;
+  }
+
+  .course-card h2 {
+    margin-bottom: 12px;
+  }
+
+  .course-card span,
+  .course-card img {
+    display: none;
+  }
+
+}
+
 /* Thesis styles */
 .thesis h2 {
   text-align: center;
@@ -291,6 +432,33 @@ h3 {
 
 .thesis .side-card-text h3 {
   padding-bottom: 8px;
+}
+
+@media only screen and (max-width: 925px) {
+  .thesis .main-container {
+    width:  55%;
+  }
+
+  .thesis .side-container {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width:  820px) {
+  .thesis .main-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .thesis .side-container,
+  .thesis .main-container h3,
+  .thesis .main-container p {
+    display: none;
+  }
+
+  .thesis video {
+    margin: 16px 0 24px 0;
+  }
 }
 
 /* Footer styles */
