@@ -472,3 +472,9 @@ footer {
 footer span a:first-child {
   margin-right: 8px;
 }
+
+@media only screen and (max-width: 500px) {
+  footer a {
+    display: none;
+  }
+}
