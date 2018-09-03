@@ -107,8 +107,8 @@ h3 {
   .courses,
   .thesis,
   footer {
-    border-right: 1px solid #4a4a4a;
-    border-left: 1px solid #4a4a4a;
+    border-right: 1px solid #8f8f8f;
+    border-left: 1px solid #8f8f8f;
   }
 }
 
@@ -343,9 +343,9 @@ h3 {
 }
 
 .course-card {
-  width: 33.3333%;
-  padding: 16px;
-  margin-bottom: 24px;
+  background-color: #fff;
+  width: calc(33.333% - 32px);
+  margin: 16px 16px 24px 16px;
 }
 
 .course-card img {
@@ -354,9 +354,7 @@ h3 {
 }
 
 .course-card-text {
-  background-color: #fff;
   padding: 16px 16px 24px 16px;
-  min-height: 10.6rem;
 }
 
 .course-card-text * {
@@ -372,18 +370,6 @@ h3 {
   margin: 8px 0;
 }
 
-@media only screen and (max-width: 1061px) {
-  .course-card-text {
-    min-height: 12rem;
-  }
-}
-
-@media only screen and (max-width: 906px) {
-  .course-card-text {
-    min-height: 13.5rem;
-  }
-}
-
 @media only screen and (max-width: 806px) {
   .courses {
     padding: 32px 16px;
@@ -393,12 +379,9 @@ h3 {
 @media only screen and (max-width: 725px) {
 
   .course-card {
-    width: 50%;
+    width: calc(50% - 32px);
   }
 
-  .course-card-text {
-    min-height: 12rem;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -416,7 +399,6 @@ h3 {
 
   .course-card-text {
     background-color: #d8d8d8;
-    min-height: 0;
   }
 
   .course-card h2 {
