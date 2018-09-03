@@ -64,15 +64,8 @@ h3 {
     background-color: #d8d8d8;
 }
 
-@media only screen and (min-width: 1200px) {
-  .banner,
-  .info,
-  .courses,
-  .thesis,
-  footer {
-    border-right: 1px solid #4a4a4a;
-    border-left: 1px solid #4a4a4a;
-  }
+.side-card {
+  transition: background-color 0.4s;
 }
 
 .side-card-images {
@@ -96,11 +89,27 @@ h3 {
 }
 
 .side-card-text a {
-  color: #1e76dd;
+  color: #5194e3;
+  transition: color 0.2s;
+}
+
+.side-card-text a:hover {
+  color: #11447f;
 }
 
 .side-card-text span {
   padding: 8px 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  .banner,
+  .info,
+  .courses,
+  .thesis,
+  footer {
+    border-right: 1px solid #4a4a4a;
+    border-left: 1px solid #4a4a4a;
+  }
 }
 
 /* Flex Styles */
@@ -138,6 +147,11 @@ h3 {
 
 .top-bar nav a {
   margin-right: 16px;
+  transition: color 0.25s;
+}
+
+.top-bar nav a:hover {
+  color: #606060;
 }
 
 .top-bar nav a:last-child {
@@ -192,6 +206,11 @@ h3 {
   padding: 8px 0;
   color: white;
   background-color: #4a4a4a;
+  transition: background-color 0.3s;
+}
+
+.banner a:hover {
+  background-color: #383838;
 }
 
 @media only screen and (max-width: 751px) {
@@ -218,7 +237,8 @@ h3 {
     align-content: center;
   }
 
-  .banner .side-container h1 {
+  .banner .side-container h1,
+  .banner .side-container p {
     text-align: center;
   }
 
