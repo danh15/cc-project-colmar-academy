@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Colmar Academy</title>
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
@@ -10,7 +11,7 @@
   </head>
   <body>
     <!-- Top Bar/Nav Section -->
-    <div class="top-bar flex ai-c jc-sb">
+    <header class="flex ai-c jc-sb">
 
       <div class="logo flex ai-c">
         <img src="./assets/images/ic-logo.svg" alt="Logo">
@@ -18,24 +19,31 @@
         <span>Academy</span>
       </div>
 
-      <nav>
-        <a href="#">On campus</a>
-        <a href="#">Online</a>
-        <a href="#">For companies</a>
-        <a href="#">Sign in</a>
+      <!-- Main Nav Menu -->
+      <nav class="main-nav">
+        <ul role="presentation">
+          <li><a href="#">On campus</a></li>
+          <li><a href="#">Online</a></li>
+          <li><a href="#">For companies</a></li>
+          <li><a href="#">Sign in</a></li>
+        </ul>
       </nav>
 
-      <!-- Mobile Menu -->
-      <a href="#" class="img-link"><img src="./assets/images/ic-on-campus.svg" alt="On campus"></a>
-      <a href="#" class="img-link"><img src="./assets/images/ic-online.svg" alt="Online"></a>
-      <a href="#" class="img-link"><img src="./assets/images/ic-login.svg" alt="Login"></a>
+      <!-- Mobile Nav Menu -->
+      <nav class="mobile-nav">
+        <ul class="flex jc-sb" role="presentation">
+          <li><a href="#" class="img-link"><img src="./assets/images/ic-on-campus.svg" alt="On campus"></a></li>
+          <li><a href="#" class="img-link"><img src="./assets/images/ic-online.svg" alt="Online"></a></li>
+          <li><a href="#" class="img-link"><img src="./assets/images/ic-login.svg" alt="Login"></a></li>
+        </ul>
+      </nav>
 
-    </div>
+    </header>
 
     <!-- Site Banner -->
     <div class="banner flex ai-c">
       <div class="main-container">
-        <img src="./assets/images/banner.jpg" alt="Banner img">
+        <img src="./assets/images/banner.jpg" alt="Students studying">
       </div>
 
       <div class="side-container">
@@ -65,7 +73,7 @@
           </div>
           <div class="side-card-text">
             <h3>Orientation Date</h3>
-            <span>Tue 10/11 & Wed 10/12: 8am-3pm</span>
+            <span>Tue 10/11 &amp; Wed 10/12: 8am-3pm</span>
             <a href="#">Read more</a>
           </div>
         </div>
@@ -73,8 +81,8 @@
         <!-- Second Info Card -->
         <div class="side-card info-card flex ai-c">
           <div class="side-card-images">
-            <img src="./assets/images/information-campus.jpg" alt="Campus" class="side-card-img">
-            <img src="./assets/images/information-campus-mobile.jpg" alt="Campus Mobile" class="info-img-mobile">
+            <img src="./assets/images/information-campus.jpg" alt="Classroom" class="side-card-img">
+            <img src="./assets/images/information-campus-mobile.jpg" alt="Classroom Mobile" class="info-img-mobile">
           </div>
           <div class="side-card-text">
             <h3>Our Campus</h3>
@@ -86,8 +94,8 @@
         <!-- Third Info Card -->
         <div class="side-card info-card flex ai-c">
           <div class="side-card-images">
-            <img src="./assets/images/information-guest-lecture.jpg" alt="Guest Lecture" class="side-card-img">
-            <img src="./assets/images/information-guest-lecture-mobile.jpg" alt="Guest Lecture Mobile" class="info-img-mobile">
+            <img src="./assets/images/information-guest-lecture.jpg" alt="Guest Speaker" class="side-card-img">
+            <img src="./assets/images/information-guest-lecture-mobile.jpg" alt="Guest Speaker Mobile" class="info-img-mobile">
           </div>
 
           <div class="side-card-text">
@@ -120,7 +128,7 @@
           <div class="course-card-text">
             <h3>Computer Art</h3>
             <span>Course</span>
-            <span>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</span>
+            <span>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</span>
           </div>
         </div>
 
@@ -170,6 +178,7 @@
     <div class="thesis">
       <h2>Thesis exhibit</h2>
       <div class="thesis-content flex">
+
         <div class="main-container">
           <video width="320" height="240" controls>
             <source src="./assets/videos/thesis.mp4" type="video/mp4">
@@ -204,6 +213,7 @@
               <h3>Now and then</h3>
               <span>Research study about New York</span>
             </div>
+            
           </div>
         </div>
       </div>
@@ -212,7 +222,12 @@
     <!-- Footer -->
     <footer class="flex jc-sb">
       <span>&copy; 2016 Colmar Academy. All rights reserved</span>
-      <span><a href="#">Terms</a><a href="#">Privacy</a></span>
+      <nav>
+        <ul role="presentation">
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </nav>
     </footer>
 
   </body>
