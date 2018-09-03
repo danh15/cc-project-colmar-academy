@@ -174,17 +174,17 @@ span {
 }
 
 @media only screen and (max-width: 690px) {
-  .top-bar span {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 500px) {
   .top-bar nav {
     display: none;
   }
   .img-link {
     display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .top-bar span {
+    display: none;
   }
 }
 
@@ -328,10 +328,6 @@ span {
     padding: 16px;
     width: 100%;
   }
-
-  .info .side-card-text {
-    line-height: 1.4rem;
-  }
 }
 
 /* Courses styles */
@@ -369,7 +365,6 @@ span {
 
 .course-card-text span {
   font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .course-card-text span:nth-child(2) {
