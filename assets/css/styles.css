@@ -390,7 +390,6 @@ header nav a:last-child {
 }
 
 @media only screen and (max-width: 725px) {
-
   .course-card {
     width: calc(50% - 32px);
   }
